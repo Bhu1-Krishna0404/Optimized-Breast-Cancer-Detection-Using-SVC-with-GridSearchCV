@@ -1,0 +1,65 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<style>
+    .chart {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.chart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chart ul li {
+    font-size: 18px;
+    color: #555555;
+    background-color: #f7f7f7;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.chart ul li:hover {
+    background-color: #e8e8e8;
+}
+
+
+
+
+</style>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="main-form">
+    <div class="form-container" id="formContainer">
+        <form method="post" id="myForm" action="/input">
+            <div class="image-container">
+                <img src="../static/images/per.jpg" alt="Description of image">
+            </div>
+            <div class="chart">
+                <h2>Model Performance Metrics</h2>
+                <ul>
+                    <li>Accuracy: {{ metrics.accuracy }}</li>
+                    <li>Precision: {{ metrics.precision }}</li>
+                    <li>Recall: {{ metrics.recall }}</li>
+                    <li>F1 Score: {{ metrics.f1_score }}</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+<br><br><br><br>
+{% endblock %}

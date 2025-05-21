@@ -1,0 +1,45 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="main-form">
+    <div class="form-container" id="formContainer">
+        <form method="post" id="myForm" action="/input">
+            <div class="image-container">
+                <img src="../static/images/charts.jpg" alt="Description of image">
+            </div>
+            <div class="main-form">
+                <div class="image-gallery">
+                    <!-- Example plot images -->
+                    <div class="plot-container">
+                        <h3>Bar Plot</h3>
+                        <img src="{{ url_for('static', filename='images/p1.png') }}" alt="Bar Plot" style="width: 100%; height: auto;">
+                    </div>
+            
+                    <div class="plot-container">
+                        <h3>Histogram</h3>
+                        <img src="{{ url_for('static', filename='images/p2.png') }}" alt="Histogram" style="width: 100%; height: auto;">
+                    </div>
+            
+                    <div class="plot-container">
+                        <h3>Scatter Plot</h3>
+                        <img src="{{ url_for('static', filename='images/p3.png') }}" alt="Scatter Plot" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="plot-container">
+                        <h3>Scores</h3>
+                        <img src="{{ url_for('static', filename='images/p4.png') }}" alt="Scatter Plot" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            
+            
+
+            
+
+            
+        </form>
+    </div>
+</div>
+<br><br><br><br>
+{% endblock %}

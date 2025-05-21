@@ -1,0 +1,2 @@
+# Optimized-Breast-Cancer-Detection-Using-SVC-with-GridSearchCV
+This project implements a machine learning model using Support Vector Classifier (SVC) with GridSearchCV for hyperparameter tuning to enhance breast cancer classification. The approach aims to improve early detection accuracy and aid in precise diagnosis of malignant and benign tumors using the Wisconsin Breast Cancer Diagnostic (WBCD) dataset.
